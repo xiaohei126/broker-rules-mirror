@@ -50,11 +50,13 @@ def parse(text: str):
             clash_domain.append(parts[1])
             surge_domain.append(f"DOMAIN,{parts[1]}")
         elif rule_type == "DOMAIN-KEYWORD" and len(parts) >= 2:
+            # Clash domain behavior 没有关键词语义，用通配近似表达
             clash_domain.append(f"*{parts[1]}*")
             surge_domain.append(f"DOMAIN-KEYWORD,{parts[1]}")
         elif rule_type in ("IP-CIDR", "IP-CIDR6") and len(parts) >= 2:
             clash_ip.append(parts[1])
             surge_ip.append(f"{rule_type},{parts[1]},no-resolve")
+        # 其余规则类型按需自行扩展分支
 
     dedup = lambda lst: sorted(set(lst))
     return dedup(clash_domain), dedup(clash_ip), dedup(surge_domain), dedup(surge_ip)
@@ -62,4 +64,32 @@ def parse(text: str):
 
 def write_yaml(path: str, entries: list[str]):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("payload:\n")
+        for e in entries:
+            f.write(f"  - '{e}'\n")
+
+
+def write_list(path: str, lines: list[str]):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
+def main():
+    text = fetch(SOURCE_URL)
+    clash_domain, clash_ip, surge_domain, surge_ip = parse(text)
+
+    write_yaml(OUT_CLASH_DOMAIN, clash_domain)
+    write_yaml(OUT_CLASH_IP, clash_ip)
+    write_list(OUT_SURGE_DOMAIN, surge_domain)
+    write_list(OUT_SURGE_IP, surge_ip)
+
+    print(f"[Clash] domain: {len(clash_domain)} 条 -> {OUT_CLASH_DOMAIN}")
+    print(f"[Clash] ip:     {len(clash_ip)} 条 -> {OUT_CLASH_IP}")
+    print(f"[Surge] domain: {len(surge_domain)} 条 -> {OUT_SURGE_DOMAIN}")
+    print(f"[Surge] ip:     {len(surge_ip)} 条 -> {OUT_SURGE_IP}")
+
+
+if __name__ == "__main__":
+    main()
