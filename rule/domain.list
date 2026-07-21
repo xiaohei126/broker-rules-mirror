@@ -16,6 +16,7 @@ DOMAIN,quote.longbridge.global
 DOMAIN,support.futunn.com
 DOMAIN,trade.futunn.com
 DOMAIN,trade.longportapp.com
+DOMAIN,tradingview-user-uploads.b-cdn.net
 DOMAIN-SUFFIX,9oju31.launches.appsflyersdk.com
 DOMAIN-SUFFIX,api-gl.lbkrs.com
 DOMAIN-SUFFIX,api.lbkrs.com
@@ -86,6 +87,9 @@ DOMAIN-SUFFIX,tigerbrokers.net
 DOMAIN-SUFFIX,tigerbrokers.nz
 DOMAIN-SUFFIX,tigerfintech.com
 DOMAIN-SUFFIX,tradeup.com
+DOMAIN-SUFFIX,tradingview-widget.com
+DOMAIN-SUFFIX,tradingview.com
+DOMAIN-SUFFIX,tradingviewstore.com
 DOMAIN-SUFFIX,vbkr.com
 DOMAIN-SUFFIX,wbrks.com
 DOMAIN-SUFFIX,xiaohu8.com
