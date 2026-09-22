@@ -2,7 +2,9 @@ DOMAIN,api.futunn.com
 DOMAIN,api5.futunn.com
 DOMAIN,cdn.futustatic.com
 DOMAIN,cg.play-analytics.com
+DOMAIN,collect.us.moomoocrypto.com
 DOMAIN,download.futunn.com
+DOMAIN,loginv6.im.qcloud.com
 DOMAIN,openapi-quote.longbridge.cn
 DOMAIN,openapi-quote.longbridge.com
 DOMAIN,openapi-trade.longbridge.cn
@@ -13,6 +15,7 @@ DOMAIN,openapi.longbridge.com
 DOMAIN,qtcard.futunn.com
 DOMAIN,qtcardfthk.futufin.com
 DOMAIN,quote.longbridge.global
+DOMAIN,shortconnv6.im.qcloud.com
 DOMAIN,support.futunn.com
 DOMAIN,trade.futunn.com
 DOMAIN,trade.longportapp.com
@@ -23,6 +26,7 @@ DOMAIN-SUFFIX,api.lbkrs.com
 DOMAIN-SUFFIX,cdn.futustatic.com
 DOMAIN-SUFFIX,fosunwealth.com
 DOMAIN-SUFFIX,fotechwealth.com
+DOMAIN-SUFFIX,ftesop.com
 DOMAIN-SUFFIX,futu.cn
 DOMAIN-SUFFIX,futu.com
 DOMAIN-SUFFIX,futu.hk
@@ -45,10 +49,12 @@ DOMAIN-SUFFIX,futuesop.com
 DOMAIN-SUFFIX,futufin.com
 DOMAIN-SUFFIX,futuhainan.com
 DOMAIN-SUFFIX,futuhk.com
+DOMAIN-SUFFIX,futuhk1.com
 DOMAIN-SUFFIX,futuhk2.com
 DOMAIN-SUFFIX,futuhkapp.com
 DOMAIN-SUFFIX,futuhn.com
 DOMAIN-SUFFIX,futuholdings.com
+DOMAIN-SUFFIX,futuhongkong.com
 DOMAIN-SUFFIX,futuie.com
 DOMAIN-SUFFIX,futuinc.com
 DOMAIN-SUFFIX,futuniuniu.com
@@ -76,7 +82,9 @@ DOMAIN-SUFFIX,longportapp.com
 DOMAIN-SUFFIX,mfosunhani.com
 DOMAIN-SUFFIX,moomoo.com
 DOMAIN-SUFFIX,moomoo.com.hk
+DOMAIN-SUFFIX,moomooapp.com
 DOMAIN-SUFFIX,moomoobull.com
+DOMAIN-SUFFIX,moomoocn.com
 DOMAIN-SUFFIX,moomooequity.com
 DOMAIN-SUFFIX,moomootrustee.com
 DOMAIN-SUFFIX,schwab.co.uk
